@@ -8,7 +8,7 @@ body {
   background-color: #d9dcd6;
 }
 
-.header {
+header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -16,16 +16,17 @@ body {
   color: #ffffff;
 }
 
-.header h1 {
+/* .seo has it's own class because it is only used here */
+.seo {
+  color: #d9dcd6d8;
+}
+
+h1 {
   display: inline-block;
   font-size: 48px;
 }
-/*.seo has it's own id now because it is used nowhere else*/
-#seo {
-  color: #d9dcd6;
-}
 
-.header div {
+header div {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
@@ -33,11 +34,11 @@ body {
   font-size: 20px;
 }
 
-.header div ul {
+header div ul {
   list-style-type: none;
 }
 
-.header div ul li {
+header div ul li {
   display: inline-block;
   margin-left: 25px;
 }
@@ -83,8 +84,8 @@ p {
   margin-left: 20px;
 }
 
-/*Applies to divs located in the content class*/
-.services-all {
+/* Applies to divs located within the content class */
+.services {
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
@@ -92,14 +93,15 @@ p {
   background-color: #0072bb;
   color: #ffffff;
 }
-.services-all-img {
+.services img {
   max-height: 200px;
 }
-.services-all-h2 {
+.services h2 {
   margin-bottom: 20px;
   font-size: 36px;
 }
 
+/* This applies to the benefits class (the side bar) */
 .benefits {
   margin-right: 20px;
   padding: 20px;
